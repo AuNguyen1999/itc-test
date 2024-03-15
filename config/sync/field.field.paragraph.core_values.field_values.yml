@@ -1,0 +1,38 @@
+uuid: 08c79d8e-b819-479a-bb27-48da57a6fe7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_values
+    - paragraphs.paragraphs_type.core_value
+    - paragraphs.paragraphs_type.core_values
+id: paragraph.core_values.field_values
+field_name: field_values
+entity_type: paragraph
+bundle: core_values
+label: Values
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      core_value: core_value
+    negate: 0
+    target_bundles_drag_drop:
+      carousel:
+        weight: 5
+        enabled: false
+      carousel_item:
+        weight: 6
+        enabled: false
+      core_value:
+        weight: 7
+        enabled: true
+      core_values:
+        weight: 8
+        enabled: false
+field_type: entity_reference

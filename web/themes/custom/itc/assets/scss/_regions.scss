@@ -1,0 +1,30 @@
+.region {
+  &.region-header {
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    width: 100%;
+    top: var(--drupal-displace-offset-top);
+    font-size: 13px;
+    z-index: 99;
+    position: fixed;
+    transition: transform .5s, height .4s;
+    transform: translateY(0);
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    &.scrolled{
+      height: 50px;
+    }
+  }
+
+  &.region-pre-content {
+    margin-top: calc(120px + var(--drupal-displace-offset-top));
+  }
+
+  &.region-content {
+    margin-top: 120px;
+  }
+}

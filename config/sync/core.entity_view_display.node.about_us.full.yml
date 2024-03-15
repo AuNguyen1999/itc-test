@@ -1,0 +1,38 @@
+uuid: d5758a84-a3fa-4df1-869e-bb725bc685e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.about_us.body
+    - field.field.node.about_us.field_meta_tags
+    - field.field.node.about_us.field_sections
+    - node.type.about_us
+  module:
+    - metatag
+    - user
+id: node.about_us.full
+targetEntityType: node
+bundle: about_us
+mode: full
+content:
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_sections:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  langcode: true
+  links: true

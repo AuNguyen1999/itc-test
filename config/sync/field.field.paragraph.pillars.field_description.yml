@@ -1,0 +1,24 @@
+uuid: b358c5d0-732d-4a2c-bc0a-27da776149f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.pillars
+  module:
+    - text
+id: paragraph.pillars.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: pillars
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

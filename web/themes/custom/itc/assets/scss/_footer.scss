@@ -1,0 +1,164 @@
+.footer {
+  --tw-bg-opacity: 1;
+  background-color: rgb(135 0 0 / var(--tw-bg-opacity));
+  padding-top: 96px;
+  padding-bottom: 2.5rem;
+  padding-left: 70px;
+  padding-right: 70px;
+  .content-section {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-items: flex-start;
+    margin-bottom: 0;
+
+    .content-column {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 0px;
+      align-items: center;
+
+      div {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+        max-width: 490px;
+        text-align: left;
+        font-size: 2.25rem;
+        font-weight: 700;
+        line-height: 50px;
+      }
+    }
+
+    .newsletter-container {
+      max-width: 425px;
+
+      p {
+        margin: 0px 0px 2rem 0px;
+        font-weight: 300;
+        color: rgb(255 255 255 / 1);
+        text-align: left;
+        line-height: 2.5rem;
+        font-size: 16px;
+      }
+      .newsletter-btn {
+        transition-duration: 0.3s;
+        margin-bottom: 20px;
+        margin-left: 0;
+        margin-right: 0;
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+        --tw-border-opacity: 1;
+        border-color: rgb(255 255 255 / var(--tw-border-opacity));
+        border-style: solid;
+        border-width: 1px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 48px;
+        display: flex;
+        background-image: none;
+        background-color: transparent;
+        font-family: inherit;
+        line-height: 26px;
+        cursor: pointer;
+        font-weight: 700;
+        &:hover {
+          --tw-text-opacity: 1;
+          color: rgb(23 23 23 / var(--tw-text-opacity));
+          --tw-bg-opacity: 1;
+          background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+        }
+      }
+      .social-media-icons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .social-media-icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 88px;
+          width: 90px;
+          cursor: pointer;
+          position: relative;
+
+          .social-media-icon-image {
+            width: 40px;
+            height: 40px;
+            position: relative;
+          }
+          .social-media-icon-qr {
+            visibility: hidden;
+            position: absolute;
+            height: 184px;
+            width: 180px;
+            display: block;
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            transform: translate(-50%, -25px) rotate(0) skew(0, 0) scale(1, 1);
+            transition-duration: 0.3s;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &__image {
+              height: 160px;
+              width: 160px;
+              display: block;
+              z-index: 10;
+            }
+            &__tooltip {
+              position: absolute;
+              width: 100%;
+              height: calc(100% - 4px);
+              left: 0;
+              top: 0;
+              content: "";
+              background-color: #fff;
+              z-index: 9;
+              border-radius: 8px;
+              box-shadow: 0 10px 8px 0 rgba(0,0,0,.039);
+
+              &::before {
+                position: absolute;
+                z-index: 1;
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 4px solid #fff;
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                content: "";
+              }
+            }
+          }
+
+          &:hover {
+            .social-media-icon-qr {
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .icp-text {
+    color: rgb(255 255 255 / 1);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: -24px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: Lato;
+    cursor: pointer;
+  }
+}

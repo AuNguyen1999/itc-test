@@ -1,0 +1,5 @@
+name: ITC base
+description: "This module aims to alter forms and customize some basic functionalities."
+type: module
+package: custom
+core_version_requirement: ^9 || ^10

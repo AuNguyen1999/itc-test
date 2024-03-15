@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="phpcs-standard">
+  <description>Codestyle ruleset for Drupal</description>
+
+  <rule ref="Drupal"/>
+  <rule ref="DrupalPractice"/>
+
+  <arg name="ignore" value="*.css,*.md,*.txt"/>
+
+  <file>web/modules/custom</file>
+  <file>web/themes/custom</file>
+</ruleset>

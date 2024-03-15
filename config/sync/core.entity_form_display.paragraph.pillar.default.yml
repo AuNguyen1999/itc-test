@@ -1,0 +1,38 @@
+uuid: e4356c00-8a43-4796-9c94-b01f51c52c12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pillar.field_animation
+    - field.field.paragraph.pillar.field_title
+    - paragraphs.paragraphs_type.pillar
+  module:
+    - file
+id: paragraph.pillar.default
+targetEntityType: paragraph
+bundle: pillar
+mode: default
+content:
+  field_animation:
+    type: file_generic
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

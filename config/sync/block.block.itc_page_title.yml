@@ -1,0 +1,30 @@
+uuid: 68fd175e-a5ff-471d-ae78-0524bfc40a0c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - itc
+_core:
+  default_config_hash: fNwDdW063tk_ktzSWzZVeQS9wzvLooVO280BQ9WrsIs
+id: itc_page_title
+theme: itc
+region: pre_content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article
+      page: page

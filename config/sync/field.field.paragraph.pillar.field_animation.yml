@@ -1,0 +1,27 @@
+uuid: bcb3f11c-6749-495a-bb86-f33f595cb396
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_animation
+    - paragraphs.paragraphs_type.pillar
+  module:
+    - file
+id: paragraph.pillar.field_animation
+field_name: field_animation
+entity_type: paragraph
+bundle: pillar
+label: Animation
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: json
+  max_filesize: ''
+  description_field: true
+field_type: file

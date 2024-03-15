@@ -1,0 +1,58 @@
+uuid: 8335fe9b-36c8-42d9-bdc6-86b7fcd48d1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sections
+    - node.type.about_us
+    - paragraphs.paragraphs_type.carousel
+    - paragraphs.paragraphs_type.core_values
+    - paragraphs.paragraphs_type.highlight
+    - paragraphs.paragraphs_type.pillars
+    - paragraphs.paragraphs_type.text
+id: node.about_us.field_sections
+field_name: field_sections
+entity_type: node
+bundle: about_us
+label: Sections
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      carousel: carousel
+      core_values: core_values
+      highlight: highlight
+      pillars: pillars
+      text: text
+    negate: 0
+    target_bundles_drag_drop:
+      carousel:
+        weight: 9
+        enabled: true
+      carousel_item:
+        weight: 10
+        enabled: false
+      core_value:
+        weight: 11
+        enabled: false
+      core_values:
+        weight: 12
+        enabled: true
+      highlight:
+        weight: 13
+        enabled: true
+      pillar:
+        weight: 14
+        enabled: false
+      pillars:
+        weight: 15
+        enabled: true
+      text:
+        weight: 16
+        enabled: true
+field_type: entity_reference

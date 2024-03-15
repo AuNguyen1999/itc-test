@@ -1,0 +1,24 @@
+uuid: fbbeb4e4-6c4e-4c67-b2d5-e3b53a0e0b19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.core_values
+  module:
+    - text
+id: paragraph.core_values.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: core_values
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

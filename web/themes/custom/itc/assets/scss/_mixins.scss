@@ -1,0 +1,27 @@
+@mixin font-color($font-size, $line-height, $color, $font-weight) {
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+  font-weight: $font-weight;
+}
+
+@mixin font($font-size, $line-height, $font-weight) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+@mixin font-face($font-name, $path, $name, $weight: normal, $style: normal) {
+	@font-face {
+		font-family: quote($font-name);
+		src: url($path + $name + '.eot');
+		src: url($path + $name + '.eot?#iefix') format('embedded-opentype'),
+				url($path + $name + '.woff2') format('woff2'),
+				url($path + $name + '.woff') format('woff'),
+				url($path + $name + '.ttf') format('truetype'),
+				url($path + $name + '.svg##{$name}') format('svg');
+		font-weight: $weight;
+		font-style: $style;
+		font-display: swap;
+	}
+}

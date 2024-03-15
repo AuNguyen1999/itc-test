@@ -1,0 +1,44 @@
+uuid: 20edc956-f9cd-425b-be37-3f7ab314a3c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.core_value.field_description
+    - field.field.paragraph.core_value.field_image
+    - field.field.paragraph.core_value.field_title
+    - paragraphs.paragraphs_type.core_value
+  module:
+    - image
+    - text
+id: paragraph.core_value.default
+targetEntityType: paragraph
+bundle: core_value
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

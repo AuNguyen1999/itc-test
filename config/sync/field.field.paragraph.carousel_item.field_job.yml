@@ -1,0 +1,19 @@
+uuid: 415321a7-ce7f-42cb-aa8e-5181ad96b5af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_job
+    - paragraphs.paragraphs_type.carousel_item
+id: paragraph.carousel_item.field_job
+field_name: field_job
+entity_type: paragraph
+bundle: carousel_item
+label: Job
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

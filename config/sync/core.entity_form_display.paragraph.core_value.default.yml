@@ -1,0 +1,50 @@
+uuid: 9d4f5960-9073-49a0-8a7e-a85eee839575
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.core_value.field_description
+    - field.field.paragraph.core_value.field_image
+    - field.field.paragraph.core_value.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.core_value
+  module:
+    - image
+    - text
+id: paragraph.core_value.default
+targetEntityType: paragraph
+bundle: core_value
+mode: default
+content:
+  field_description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

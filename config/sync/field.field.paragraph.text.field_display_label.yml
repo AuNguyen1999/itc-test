@@ -1,0 +1,23 @@
+uuid: 2d72d78d-ee0a-4391-8480-489295770fc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_display_label
+    - paragraphs.paragraphs_type.text
+id: paragraph.text.field_display_label
+field_name: field_display_label
+entity_type: paragraph
+bundle: text
+label: 'Display label'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Display
+  off_label: None
+field_type: boolean

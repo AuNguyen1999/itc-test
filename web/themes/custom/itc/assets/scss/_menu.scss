@@ -1,0 +1,45 @@
+.region.region-header {
+  .menu--main .menu {
+    transition: .4s;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    &-item {
+      list-style: none;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+      .is-active  {
+        font-weight: 700;
+      }
+    }
+  }
+  .site-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    transition: .4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &.scrolled {
+    .site-logo {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .language-switcher-language-url {
+    .is-active {
+      font-weight: 700;
+    }
+  }
+}

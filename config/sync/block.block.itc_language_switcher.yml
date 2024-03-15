@@ -1,0 +1,20 @@
+uuid: 1701cba6-c6d3-47cc-b874-e93683889791
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - itc
+id: itc_language_switcher
+theme: itc
+region: header
+weight: -4
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: '0'
+  provider: language
+visibility: {  }

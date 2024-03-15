@@ -1,0 +1,22 @@
+name: ITC Theme
+type: theme
+description: 'ITC Theme'
+core_version_requirement: ^9 || ^10
+base theme: claro
+
+libraries:
+  - itc/global
+  - itc/carousel
+  - itc/pillar
+
+regions:
+  header: Header
+  pre_content: Pre-content
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  footer_top: Footer Top
+  footer_bottom: Footer Bottom
+  disable: Disable
+

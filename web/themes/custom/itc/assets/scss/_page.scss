@@ -1,0 +1,52 @@
+body {
+  .container-fluid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .page {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    // margin-top: var(--drupal-displace-offset-top);
+  }
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .container-fluid {
+    max-width:576px
+  }
+}
+
+@media (min-width: 768px) {
+  .container-fluid {
+    max-width:768px
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-fluid {
+    max-width:1024px
+  }
+}
+
+@media (min-width: 1380px) {
+  .container-fluid {
+    max-width:1380px
+  }
+}
+
+@media (min-width: 1600px) {
+  .container-fluid {
+    max-width:1600px;
+  }
+}
+
+.section-main {
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+  z-index: 4;
+}

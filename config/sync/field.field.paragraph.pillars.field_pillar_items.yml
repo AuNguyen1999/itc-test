@@ -1,0 +1,44 @@
+uuid: c9f78356-cd8c-402f-8a1e-755529c2d51e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pillar_items
+    - paragraphs.paragraphs_type.pillar
+    - paragraphs.paragraphs_type.pillars
+id: paragraph.pillars.field_pillar_items
+field_name: field_pillar_items
+entity_type: paragraph
+bundle: pillars
+label: 'Pillar items'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      pillar: pillar
+    negate: 0
+    target_bundles_drag_drop:
+      carousel:
+        weight: 7
+        enabled: false
+      carousel_item:
+        weight: 8
+        enabled: false
+      core_value:
+        weight: 9
+        enabled: false
+      core_values:
+        weight: 10
+        enabled: false
+      pillar:
+        weight: 11
+        enabled: true
+      pillars:
+        weight: 12
+        enabled: false
+field_type: entity_reference

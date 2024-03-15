@@ -1,0 +1,21 @@
+<?php
+
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_inline_entity_form_table_fields_alter().
+ */
+function itc_base_inline_entity_form_table_fields_alter(&$fields, $context) {
+  if ($context['entity_type'] === 'paragraph') {
+    $fields['label']['type'] = 'callback';
+    $fields['label']['callback'] = '_itc_base_custom_inline_entity_form_table_label';
+  }
+}
+
+
+/**
+ * Callback for the label field.
+ */
+function _itc_base_custom_inline_entity_form_table_label(EntityInterface $entity) {
+  return $entity->hasField('field_title') ? $entity->get('field_title')->getString() : $entity->label();
+}
