@@ -76,3 +76,7 @@ gulp build
 - Login page: [http://localhost:8081/user/login](http://localhost:8081/user/login)
 - About page: [http://localhost:8081/about-us](http://localhost:8081/about-us)
 - Admin account: admin/TeStROWatEMe
+
+### Demo
+
+![DEMO](https://github.com/AuNguyen1999/itc-test/assets/103050992/c50bb8f0-9ea9-4576-97b3-3da6409a7949)
